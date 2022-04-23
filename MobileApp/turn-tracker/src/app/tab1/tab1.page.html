@@ -1,17 +1,45 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<!DOCTYPE html>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<head>
+</head>
+
+<body>
+  <ion-header [translucent]="true">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title class="ion-text-center">
+        Dungeons and Dragons Turn Tracker
+      </ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+  <ion-content [fullscreen]="true" style="background-color: #cec2ae;">
+    <ion-grid>
+      <ion-row style="height: 100px">
+        <ion-col>
+        </ion-col>
+      </ion-row>
+      <ion-row style="height: 100px">
+        <ion-col>
+          <h1 class="ion-text-center">Logo Placement Holder</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" size="large">
+            <ion-icon name="add-outline"></ion-icon>
+            Create Party
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" size="large">
+            <ion-icon name="add-outline"></ion-icon>
+            Join Party
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    </ion-content>
+
+</body>
