@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'create-party',
     loadChildren: () => import('./create-party/create-party.module').then( m => m.CreatePartyPageModule)
+  },
+  {
+    path: 'join',
+    loadChildren: () => import('./join/join.module').then( m => m.JoinPageModule)
   }
 ];
 @NgModule({
