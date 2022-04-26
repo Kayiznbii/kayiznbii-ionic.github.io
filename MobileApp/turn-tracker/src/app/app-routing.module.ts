@@ -13,7 +13,11 @@ const routes: Routes = [
   {
     path: 'join',
     loadChildren: () => import('./join/join.module').then( m => m.JoinPageModule)
+  },  {
+    path: 'tracker',
+    loadChildren: () => import('./tracker/tracker.module').then( m => m.TrackerPageModule)
   }
+
 ];
 @NgModule({
   imports: [
