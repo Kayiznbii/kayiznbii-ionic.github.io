@@ -21,7 +21,7 @@
   <ion-content [fullscreen]="true" style="background-color: #cec2ae;">
    
       <ion-grid>
-        <ion-reorder-group disabled="false">
+        <ion-reorder-group (ionItemReorder)="reorderItems($event)" disabled="false" disabled="false">
         <ion-row>
           
           <ion-col>
@@ -60,7 +60,7 @@
             <ion-reorder>
               <ion-item>
                 <ion-label>
-                  Character: Zohe
+                  Zohe
                 </ion-label>
                 <ion-label>
                   AC: 14
